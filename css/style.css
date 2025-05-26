@@ -212,41 +212,6 @@ header .container {
         bottom: 5px;
     }
 }
-/* Cacher la nav sur petit écran par défaut */
-.navbar ul {
-  display: flex;
-  gap: 2rem;
-}
-
-.menu-toggle {
-  display: none;
-  cursor: pointer;
-  font-size: 1.8rem;
-}
-
-/* Media query pour petits écrans */
-@media (max-width: 768px) {
-  .navbar ul {
-    display: none; /* cacher menu */
-    flex-direction: column;
-    background-color: #333; /* ou ta couleur */
-    position: absolute;
-    top: 60px; /* en dessous header */
-    right: 0;
-    width: 200px;
-    padding: 1rem;
-  }
-
-  .navbar.active ul {
-    display: flex; /* afficher menu quand actif */
-  }
-
-  .menu-toggle {
-    display: block;
-    color: #fff; /* ou ta couleur */
-  }
-}
-
 
 /* Home Section */
 .home-section {
