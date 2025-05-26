@@ -24,8 +24,10 @@
             </nav>
             
             <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
+                <img src="img/List_menu_toggle-512.webp" alt="Menu" id="menu-icon" />
             </div>
+              
+              
         </div>
     </header>
 
@@ -252,7 +254,13 @@
             </div>
         </div>
     </footer>
-
+    <script>
+        function toggleMenu() {
+          const navLinks = document.querySelector('.nav-links');
+          navLinks.classList.toggle('active');
+        }
+      </script>
+      
     <script src="js/script.js"></script>
 </body>
 </html>
