@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
     const navbar = document.querySelector('.navbar');
     
-    menuToggle.addEventListener('click', function() {
+    menuToggle.addEventListener('touchstart', function() {
         navbar.classList.toggle('active');
         menuToggle.querySelector('i').classList.toggle('fa-times');
     });
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Close mobile menu when clicking nav links
     const navLinks = document.querySelectorAll('.navbar ul li a');
     navLinks.forEach(link => {
-        link.addEventListener('click', function() {
+        link.addEventListener('touchstart', function() {
             navbar.classList.remove('active');
             menuToggle.querySelector('i').classList.remove('fa-times');
         });
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const barsIcon = document.querySelector('.menu-toggle i');
     
     // Toggle menu on button click
-    menuToggle.addEventListener('click', function() {
+    menuToggle.addEventListener('touchstart', function() {
         navbar.classList.toggle('active');
         document.body.classList.toggle('no-scroll');
         
@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Close menu when clicking a link
     navLinks.forEach(link => {
-        link.addEventListener('click', function() {
+        link.addEventListener('touchstart', function() {
             navbar.classList.remove('active');
             document.body.classList.remove('no-scroll');
             barsIcon.classList.remove('fa-times');
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Close menu when clicking outside
-    document.addEventListener('click', function(event) {
+    document.addEventListener('touchstart', function(event) {
         if (!navbar.contains(event.target) && !menuToggle.contains(event.target)) {
             navbar.classList.remove('active');
             document.body.classList.remove('no-scroll');
