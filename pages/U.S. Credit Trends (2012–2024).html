@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U.S. Credit Behavior Dashboard | Esméralda Nguetse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/project-styles.css">
+</head>
+<body>
+    <div class="project-container">
+        <!-- Project Header -->
+        <header class="project-header">
+            <div class="project-meta">
+                <h1>U.S. Credit Behavior Dashboard (2012–2024)</h1>
+                <div class="project-details">
+                    <div class="detail-item">
+                        <i class="fas fa-user-tie"></i>
+                        <span>Role: Data Analyst</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-tools"></i>
+                        <span>Tools: Python · Pandas · Plotly · Streamlit</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>Type: Personal Project</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Duration: 2 weeks</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Status: Published</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://credit-scoring-federal-reserve-dashboard.streamlit.app/#u-s-credit-trends-dashboard-2012-2024" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-external-link-alt"></i> Live Dashboard
+                    </a>
+                    <a href="https://github.com/FaeKiseki/Credit-Scoring-Federal-Reserve" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> GitHub Repository
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Project Content -->
+        <main class="project-content">
+            <!-- Context Section -->
+            <section class="project-section">
+                <h2><i class="fas fa-puzzle-piece"></i> Context & Problem</h2>
+                <p>The U.S. credit landscape is evolving rapidly. With rising household debt and economic uncertainty, banks and analysts need clear tools to monitor credit trends, risks, and behaviors. However, public data is often complex, raw, or hard to interpret.</p>
+                <div class="highlight-box">
+                    <p>How can we turn open macroeconomic data into a decision-support tool that's intuitive, strategic, and insightful?</p>
+                </div>
+            </section>
+
+            <!-- Solution Section -->
+            <section class="project-section">
+                <h2><i class="fas fa-lightbulb"></i> My Solution</h2>
+                <p>I built an interactive and visually elegant dashboard using official Federal Reserve credit card data. It translates 10+ years of aggregated credit metrics into a strategic overview of:</p>
+                <ul class="solution-list">
+                    <li><i class="fas fa-chart-line"></i> Debt growth</li>
+                    <li><i class="fas fa-exclamation-triangle"></i> Credit risk concentration</li>
+                    <li><i class="fas fa-money-bill-wave"></i> Repayment behavior</li>
+                    <li><i class="fas fa-search-dollar"></i> Early signs of financial stress</li>
+                </ul>
+                <p>All of this is presented in an interface that's fully responsive, interactive, and deployable online — with no login or setup.</p>
+            </section>
+
+            <!-- Dashboard Screenshot -->
+            <section class="project-section">
+                
+            </section>
+
+            <!-- Insights Section -->
+            <section class="project-section">
+                <h2><i class="fas fa-chart-bar"></i> Key Insights Discovered</h2>
+                <div class="dashboard-screenshot">
+                    <img src="../img/Dashboard Project 1.jpeg" alt="U.S. Credit Behavior Dashboard Screenshot">
+                </div>
+                <div class="insights-grid">
+                    <div class="insight-card">
+                        <div class="insight-icon">
+                            <i class="fas fa-arrow-up"></i>
+                        </div>
+                        <h3>+64% Growth</h3>
+                        <p>Total credit balances between 2012 and 2024 — reaching a historic high of $951B.</p>
+                    </div>
+                    <div class="insight-card">
+                        <div class="insight-icon">
+                            <i class="fas fa-percentage"></i>
+                        </div>
+                        <h3>90% Credit Utilization</h3>
+                        <p>The top 10% of borrowers are using over 90% of their credit limit — a potential risk cluster.</p>
+                    </div>
+                    <div class="insight-card">
+                        <div class="fas fa-credit-card"></i>
+                        </div>
+                        <h3>Payment Behavior Shift</h3>
+                        <p>Median credit scores (~760) remained stable, but minimum payment behavior is on the rise post-2022.</p>
+                    </div>
+                    <div class="insight-card">
+                        <div class="insight-icon">
+                            <i class="fas fa-calendar-times"></i>
+                        </div>
+                        <h3>Delinquency Uptick</h3>
+                        <p>Delinquency rates (especially 90+ days) show a soft but consistent uptick since 2023.</p>
+                    </div>
+                </div>
+                <div class="insights-summary">
+                    <p>These patterns highlight both structural financial resilience and emerging vulnerabilities in consumer credit.</p>
+                </div>
+            </section>
+
+            <!-- Technical Details -->
+            <section class="project-section">
+                <h2><i class="fas fa-code"></i> Technical Implementation</h2>
+                <div class="tech-details">
+                    <div class="tech-item">
+                        <h3><i class="fas fa-database"></i> Data Processing</h3>
+                        <ul>
+                            <li>Cleaned and transformed raw quarterly CSVs with 80+ features</li>
+                            <li>Used Python and Pandas for data wrangling and time formatting</li>
+                        </ul>
+                    </div>
+                    <div class="tech-item">
+                        <h3><i class="fas fa-chart-pie"></i> Visualization</h3>
+                        <ul>
+                            <li>Designed KPIs and interactive charts with Plotly</li>
+                            <li>Created responsive layout for all device sizes</li>
+                        </ul>
+                    </div>
+                    <div class="tech-item">
+                        <h3><i class="fas fa-cloud-upload-alt"></i> Deployment</h3>
+                        <ul>
+                            <li>Built and deployed the dashboard on Streamlit Cloud</li>
+                            <li>Optimized for performance with large datasets</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Project Footer -->
+        <footer class="project-footer">
+            <a href="../index.html" class="btn btn-outline">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+        </footer>
+    </div>
+</body>
+</html>
