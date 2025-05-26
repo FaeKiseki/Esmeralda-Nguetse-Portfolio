@@ -162,7 +162,16 @@ header .container {
     cursor: pointer;
     font-size: 1.5rem;
     color: var(--dark-color);
-    z-index: 1001;
+    z-index: 9999;
+}
+
+.menu-toggle {
+  z-index: 9999 !important;
+  position: fixed !important;
+}
+
+.navbar {
+  z-index: 9998 !important;
 }
 
 /* Mobile Responsive Styles */
