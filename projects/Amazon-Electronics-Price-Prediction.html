@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Electronics Price Prediction | Esméralda Nguetse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/project-styles.css">
+</head>
+<body>
+    <div class="project-container">
+        <!-- Project Header -->
+        <header class="project-header">
+            <div class="project-meta">
+                <span class="project-type">Machine Learning</span>
+                <h1>Amazon Electronics Price Prediction</h1>
+                <div class="project-details">
+                    <div class="detail-item">
+                        <i class="fas fa-user-tie"></i>
+                        <span>Role: Data Scientist</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-tools"></i>
+                        <span>Tools: Python · scikit-learn · Streamlit · Tableau</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>Type: Personal Project</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Duration: 3 weeks</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Status: Published</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://amazon-electronics-price-prediction.streamlit.app/" class="btn btn-primary">
+                        <i class="fas fa-external-link-alt"></i> Live Price Prediction App
+                    </a>
+                    <a href="https://public.tableau.com/views/ConsumerInsightsforElectronicsonAmazon2023/ConsumerInsightsforElectronicsonAmazon2023?:language=fr-FR&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" class="btn btn-primary">
+                        <i class="fas fa-chart-bar"></i> Interactive Tableau Dashboard
+                    </a>
+                    <a href="https://github.com/FaeKiseki/amazon-electronics-dashboard-and-price-prediction-2023" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> GitHub Repository
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Project Content -->
+        <main class="project-content">
+            <!-- Context Section -->
+            <section class="project-section">
+                <h2><i class="fas fa-puzzle-piece"></i> Context & Problem</h2>
+                <p>Amazon electronics listings include hundreds of thousands of products with varying prices, ratings, and discounts. For consumers and sellers, it's hard to know if a discount is fair or if a product is over- or under-priced.</p>
+                <div class="highlight-box">
+                    <p>How can we build a data-driven tool that estimates realistic discounted prices to support smarter buying and pricing strategies?</p>
+                </div>
+            </section>
+
+            <!-- Solution Section -->
+            <section class="project-section">
+                <h2><i class="fas fa-lightbulb"></i> My Solution</h2>
+                <p>I developed a Random Forest regression model to predict discounted prices based on product features such as ratings, number of reviews, actual price, discount percentage, and keywords extracted from product titles.</p>
+                <p>This model is deployed in a Streamlit app for easy price estimation and complemented by a Tableau dashboard for interactive market analysis.</p>
+            </section>
+
+            <!-- Dashboard Screenshot -->
+            <section class="project-section">
+                <div class="dashboard-screenshot">
+                    <img src="../img/Consumer Insights for Electronics on Amazon (2023).png" alt="Amazon Dashboard">
+                    <div class="screenshot-caption">Dashboard showing consumer insights for electronics on Amazon (2023)</div>
+                </div>
+            </section>
+
+            <!-- Insights Section -->
+            <section class="project-section">
+                <h2><i class="fas fa-chart-bar"></i> Key Insights Discovered</h2>
+                <div class="insights-grid">
+                    <div class="insight-card">
+                        <div class="insight-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>Model Performance</h3>
+                        <p>The Random Forest model outperformed Gradient Boosting with an RMSE of 439.70 and MAE of 81.11 on test data.</p>
+                    </div>
+                    <div class="insight-card">
+                        <div class="insight-icon">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <h3>Keyword Impact</h3>
+                        <p>Certain keywords (like "boAt" or "Amazon") and product name length have measurable effects on predicted discounts.</p>
+                    </div>
+                    <div class="insight-card">
+                        <div class="insight-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Rating Correlation</h3>
+                        <p>High ratings and number of reviews correlate with smaller discount percentages, indicating premium positioning.</p>
+                    </div>
+                    <div class="insight-card">
+                        <div class="insight-icon">
+                            <i class="fas fa-percentage"></i>
+                        </div>
+                        <h3>Discount Clusters</h3>
+                        <p>The dashboard reveals clusters of products with unusually high discounts, indicating potential undervaluation or clearance sales.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technical Details -->
+            <section class="project-section">
+                <h2><i class="fas fa-code"></i> What I Built</h2>
+                <div class="tech-details">
+                    <div class="tech-item">
+                        <h3><i class="fas fa-database"></i> Data Processing</h3>
+                        <ul>
+                            <li>Cleaned and engineered features from a dataset of Amazon electronics products</li>
+                        </ul>
+                    </div>
+                    <div class="tech-item">
+                        <h3><i class="fas fa-brain"></i> Model Development</h3>
+                        <ul>
+                            <li>Trained and compared Random Forest and Gradient Boosting regressors to predict discount prices</li>
+                        </ul>
+                    </div>
+                    <div class="tech-item">
+                        <h3><i class="fas fa-laptop-code"></i> Application</h3>
+                        <ul>
+                            <li>Developed a user-friendly Streamlit app for real-time price prediction with manual feature inputs</li>
+                            <li>Designed an interactive Tableau dashboard visualizing consumer behavior</li>
+                        </ul>
+                    </div>
+                    <div class="tech-item">
+                        <h3><i class="fas fa-cloud-upload-alt"></i> Deployment</h3>
+                        <ul>
+                            <li>Hosted the app and dashboard publicly for transparent and practical use</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Project Footer -->
+        <footer class="project-footer">
+            <a href="../portfolio.html" class="btn btn-outline">
+                <i class="fas fa-arrow-left"></i> Back to Portfolio
+            </a>
+        </footer>
+    </div>
+</body>
+</html>
