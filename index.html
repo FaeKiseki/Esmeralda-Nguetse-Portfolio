@@ -3,153 +3,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon Electronics Price Prediction | Esméralda Nguetse</title>
+    <title>Esméralda Nguetse | Data Analyst Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../css/project-styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="project-container">
-        <!-- Project Header -->
-        <header class="project-header">
-            <div class="project-meta">
-                <span class="project-type">Machine Learning</span>
-                <h1>Amazon Electronics Price Prediction</h1>
-                <div class="project-details">
-                    <div class="detail-item">
-                        <i class="fas fa-user-tie"></i>
-                        <span>Role: Data Scientist</span>
-                    </div>
-                    <div class="detail-item">
-                        <i class="fas fa-tools"></i>
-                        <span>Tools: Python · scikit-learn · Streamlit · Tableau</span>
-                    </div>
-                    <div class="detail-item">
-                        <i class="fas fa-project-diagram"></i>
-                        <span>Type: Personal Project</span>
-                    </div>
-                    <div class="detail-item">
-                        <i class="fas fa-clock"></i>
-                        <span>Duration: 3 weeks</span>
-                    </div>
-                    <div class="detail-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Status: Published</span>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <a href="#" class="btn btn-primary">
-                        <i class="fas fa-external-link-alt"></i> Live Price Prediction App
-                    </a>
-                    <a href="#" class="btn btn-primary">
-                        <i class="fas fa-chart-bar"></i> Interactive Tableau Dashboard
-                    </a>
-                    <a href="#" class="btn btn-secondary">
-                        <i class="fab fa-github"></i> GitHub Repo
-                    </a>
+    <!-- Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">Esméralda<span>.</span></div>
+            
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#resume" class="nav-link">Resume</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="menu-toggle">
+                <img src="img/List_menu_toggle-512.webp" alt="Menu" id="menu-icon" />
+            </div>
+              
+              
+        </div>
+    </header>
+
+    <!-- Home Section -->
+<section id="home" class="home-section">
+    <div class="container">
+        <div class="home-content">
+            <h1>Esméralda Nguetse</h1>
+            <h2>Data Analyst</h2>
+            <p>Transforming data into actionable insights for business growth</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/marie-rose-esm%C3%A9ralda-nguetse-anamba-6248b2241?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/FaeKiseki" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:anambamarie@outlook.fr" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+            <a href="#portfolio" class="btn">View My Work</a>
+        </div>
+    </div>
+</section>
+
+    <!-- About Section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="img/profile-square-2.jpeg" alt="Esméralda Nguetse">
+            </div>
+            <div class="about-text">
+                <h3>Data Analyst Enthusiast</h3>
+                <p>Curious mind. Strategic thinker. Data storyteller.
+                    I’m Esméralda Nguetse, a data analyst driven by the challenge of turning messy data into meaningful insight. With a strong command of Python, SQL, and Power BI, I build predictive models and smart dashboards that empower decision-making. I thrive at the intersection of analytics and business, helping organizations translate numbers into impactful strategies.</p>
+
+                <div class="skills">
+                    <h4>Skills:</h4>
+                    <ul>
+                        <li><strong>Programming:</strong> Python (TensorFlow, Scikit-Learn, Pandas), R, JavaScript</li>
+                        <li><strong>Data Visualization:</strong> Power BI, Tableau, Matplotlib, Seaborn</li>
+                        <li><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB</li>
+                        <li><strong>Machine Learning:</strong> Predictive Modeling, ETL Processes</li>
+                        <li><strong>Tools:</strong> Git/GitHub, Jupyter Notebook, Google Cloud</li>
+                        <li><strong>Languages:</strong> French (Native), English (B2)</li>
+                    </ul>
                 </div>
             </div>
-        </header>
-
-        <!-- Project Content -->
-        <main class="project-content">
-            <!-- Context Section -->
-            <section class="project-section">
-                <h2><i class="fas fa-puzzle-piece"></i> Context & Problem</h2>
-                <p>Amazon electronics listings include hundreds of thousands of products with varying prices, ratings, and discounts. For consumers and sellers, it's hard to know if a discount is fair or if a product is over- or under-priced.</p>
-                <div class="highlight-box">
-                    <p>How can we build a data-driven tool that estimates realistic discounted prices to support smarter buying and pricing strategies?</p>
-                </div>
-            </section>
-
-            <!-- Solution Section -->
-            <section class="project-section">
-                <h2><i class="fas fa-lightbulb"></i> My Solution</h2>
-                <p>I developed a Random Forest regression model to predict discounted prices based on product features such as ratings, number of reviews, actual price, discount percentage, and keywords extracted from product titles.</p>
-                <p>This model is deployed in a Streamlit app for easy price estimation and complemented by a Tableau dashboard for interactive market analysis.</p>
-            </section>
-
-            <!-- Dashboard Screenshot -->
-            <section class="project-section">
-                <div class="dashboard-screenshot">
-                    <img src="../images/amazon-price-prediction-screenshot.jpg" alt="Amazon Price Prediction Dashboard Screenshot">
-                    <div class="screenshot-caption">Streamlit app interface showing price prediction results</div>
-                </div>
-            </section>
-
-            <!-- Insights Section -->
-            <section class="project-section">
-                <h2><i class="fas fa-chart-bar"></i> Key Insights Discovered</h2>
-                <div class="insights-grid">
-                    <div class="insight-card">
-                        <div class="insight-icon">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <h3>Model Performance</h3>
-                        <p>The Random Forest model outperformed Gradient Boosting with an RMSE of 439.70 and MAE of 81.11 on test data.</p>
-                    </div>
-                    <div class="insight-card">
-                        <div class="insight-icon">
-                            <i class="fas fa-key"></i>
-                        </div>
-                        <h3>Keyword Impact</h3>
-                        <p>Certain keywords (like "boAt" or "Amazon") and product name length have measurable effects on predicted discounts.</p>
-                    </div>
-                    <div class="insight-card">
-                        <div class="insight-icon">
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h3>Rating Correlation</h3>
-                        <p>High ratings and number of reviews correlate with smaller discount percentages, indicating premium positioning.</p>
-                    </div>
-                    <div class="insight-card">
-                        <div class="insight-icon">
-                            <i class="fas fa-percentage"></i>
-                        </div>
-                        <h3>Discount Clusters</h3>
-                        <p>The dashboard reveals clusters of products with unusually high discounts, indicating potential undervaluation or clearance sales.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Technical Details -->
-            <section class="project-section">
-                <h2><i class="fas fa-code"></i> What I Built</h2>
-                <div class="tech-details">
-                    <div class="tech-item">
-                        <h3><i class="fas fa-database"></i> Data Processing</h3>
-                        <ul>
-                            <li>Cleaned and engineered features from a dataset of Amazon India electronics products</li>
-                        </ul>
-                    </div>
-                    <div class="tech-item">
-                        <h3><i class="fas fa-brain"></i> Model Development</h3>
-                        <ul>
-                            <li>Trained and compared Random Forest and Gradient Boosting regressors to predict discount prices</li>
-                        </ul>
-                    </div>
-                    <div class="tech-item">
-                        <h3><i class="fas fa-laptop-code"></i> Application</h3>
-                        <ul>
-                            <li>Developed a user-friendly Streamlit app for real-time price prediction with manual feature inputs</li>
-                            <li>Designed an interactive Tableau dashboard visualizing consumer behavior and pricing trends across categories</li>
-                        </ul>
-                    </div>
-                    <div class="tech-item">
-                        <h3><i class="fas fa-cloud-upload-alt"></i> Deployment</h3>
-                        <ul>
-                            <li>Hosted the app and dashboard publicly for transparent and practical use</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!-- Project Footer -->
-        <footer class="project-footer">
-            <a href="../portfolio.html" class="btn btn-outline">
-                <i class="fas fa-arrow-left"></i> Back to Portfolio
-            </a>
-        </footer>
+        </div>
     </div>
+</section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+        <div class="container">
+            <h2 class="section-title">My <span>Resume</span></h2>
+            
+            <div class="resume-content">
+                <div class="education">
+                    <h3>Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>Master's in Information Technology</h4>
+                            <h5>November 2023 - November 2024</h5>
+                            <p><em>University of the People | Pasadena, California</em></p>
+                            <p>This Master provided me comprehensive technical expertise in machine learning, database management, and algorithm design. This rigorous program strengthened my programming skills across Python, R, SQL, and JavaScript while developing advanced capabilities in cybersecurity and project management, establishing a solid foundation for business analytics and data science applications.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>Bachelor's in Management Econonomics, Quantitative Management track</h4>
+                            <h5>September 2019 - August 2022</h5>
+                            <p><em>Catholic University of Central Africa | Yaounde, Cameroon</em></p>
+                            <p>My education balanced theoretical economic principles with practical quantitative analysis, providing the foundation for my subsequent data analytics career and cultivating the analytical mindset essential for success in business analytics and data science.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="experience">
+                    <h3>Experience</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>Data Analyst</h4>
+                            <h5>March 2024 - Present</h5>
+                            <p><em>Uwezo Consulting Firm | Yaounde, Cameroon</em></p>
+                            <ul>
+                                <li>Data collection, cleansing and analysis to identify trends and opportunities for the company's customers.</li>
+                                <li>Development of interactive dashboards and visual reports to facilitate strategic decision-making.</li>
+                                <li>Collaboration with internal teams and customers to understand needs and provide data-driven recommendations.</li>
+                                <li>Application of statistical and predictive models to optimize customers' business processes.</li>
+                                <li>Technology watch and adoption of best practices in data analysis to ensure quality solutions.</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>Machine Learning Intern</h4>
+                            <h5>December 2024 - January 2025</h5>
+                            <p><em>Hubble Mind | Remote</em></p>
+                            <ul>
+                                <li>Collected, cleaned and analyzed data on textile worker productivity to facilitate data-driven decision-making.</li>
+                                <li>Developed predictive models to optimize performance and reduce operational inefficiencies.</li>
+                                <li>Created an intuitive web interface enabling company employees to make predictions by entering the necessary data.</li>
+                                <li>Wrote a detailed report presenting the results and recommendations of the project.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resume-download">
+                <a href="resume/MARIE ROSE ESMERALDA NGUETSE ANAMBA.pdf" target="_blank"  class="btn">Download Full Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title">My <span>Portfolio</span></h2>
+
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item" data-category="data-analysis">
+                    <div class="portfolio-image">
+                        <img src="img/shutterstock-2494152017-huge-licensed-scaled.jpg" alt="U.S. Credit Trends (2012–2024)">
+                        <div class="portfolio-overlay">
+                            <h4>U.S. Credit Trends (2012–2024)</h4>
+                            <p>This project analyzes aggregated U.S. credit card balance data from Q4 2024, published by the Federal Reserve Bank of Philadelphia.</p>
+                            <a href="projects/us-credit-trends.html" target="_blank" class="portfolio-link"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="portfolio-item" data-category="data-analysis">
+                    <div class="portfolio-image">
+                        <img src="img/Buying-Behavior.jpg" alt="Electronics Price Prediction – Amazon 2023">
+                        <div class="portfolio-overlay">
+                            <h4>Electronics Price Prediction – Amazon 2023</h4>
+                            <p>This project predicts discounted prices of Amazon electronic products using machine learning and visualizes consumer insights through an interactive dashboard, helping identify pricing trends and estimate fair product values.</p>
+                            <a href="projects/Amazon-Electronics-Price-Prediction.html" target="_blank" class="portfolio-link"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="portfolio-item" data-category="data-analysis">
+                    <div class="portfolio-image">
+                        <img src="img/shutterstock-2494152017-huge-licensed-scaled.jpg" alt="U.S. Credit Trends (2012–2024)">
+                        <div class="portfolio-overlay">
+                            <h4>U.S. Credit Trends (2012–2024)</h4>
+                            <p>This project analyzes aggregated U.S. credit card balance data from Q4 2024, published by the Federal Reserve Bank of Philadelphia.</p>
+                            <a href="projects/us-credit-trends.html" target="_blank" class="portfolio-link"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="portfolio-item" data-category="machine-learning">
+                    <div class="portfolio-image">
+                        <img src="img/pngtree-textile-and-garment-factory-woman-craft-cloth-photo-photo-image_30803426.jpg" alt="Garment Worker Productivity Prediction">
+                        <div class="portfolio-overlay">
+                            <h4>Garment Worker Productivity Prediction</h4>
+                            <p>This project focused on optimizing garment worker productivity in a manufacturing setting through machine learning. Predictive models were built using regression techniques.</p>
+                            <a href="projects/garment-productivity.html" target="_blank" class="portfolio-link"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Location:</h4>
+                        <p>Yaounde, Cameroon</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email:</h4>
+                        <p>anambamarie@outlook.fr</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h4>Call:</h4>
+                        <p>+237 699 195 965</p>
+                    </div>
+                </div>
+                <form id="contactForm" action="https://formspree.io/f/xeogbpal" method="POST" target="_blank" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" id="subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                    <input type="hidden" name="_language" value="fr">
+                    <button type="submit" class="btn" id="submitBtn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Esméralda<span>.</span></div>
+                <p>Data Analyst transforming data into strategic insights</p>
+                <div class="footer-social">
+                <a href="https://www.linkedin.com/in/marie-rose-esm%C3%A9ralda-nguetse-anamba-6248b2241?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/FaeKiseki" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:anambamarie@outlook.fr" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="year"></span> Esméralda Nguetse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+          const navLinks = document.querySelector('.nav-links');
+          navLinks.classList.toggle('active');
+        }
+      </script>
+      
+    <script src="js/script.js"></script>
 </body>
 </html>
