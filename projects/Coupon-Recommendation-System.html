@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coupon Acceptance Recommendation System | Esméralda Nguetse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/project-styles.css">
+</head>
+<body>
+    <div class="project-container">
+        <!-- Project Header -->
+        <header class="project-header">
+            <div class="project-meta">
+                <span class="project-type">Machine Learning</span>
+                <h1>Coupon Acceptance Prediction Dashboard</h1>
+                <div class="project-details">
+                    <div class="detail-item">
+                        <i class="fas fa-user-tie"></i>
+                        <span>Role: Machine Learning Intern</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-tools"></i>
+                        <span>Tools: Python · Pandas · Scikit-learn · Tableau</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>Type: Internship Project</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Duration: 4 weeks</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Status: Completed</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://public.tableau.com/app/profile/marie.rose.esmeralda.nguetse.anamba/viz/Couponacceptanceanalysis/Couponacceptanceanalysis" class="btn btn-primary" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Live Dashboard
+                    </a>
+                    <a href="https://github.com/FaeKiseki/coupon-acceptance-prediction" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-github"></i> GitHub Repository
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Project Content -->
+        <main class="project-content">
+            <!-- Context Section -->
+            <section class="project-section">
+                <h2><i class="fas fa-puzzle-piece"></i> Context & Problem</h2>
+                <p>At Hubble Mind, I joined the machine learning team during my internship with a mission to better understand user behavior around promotional coupon acceptance.</p>
+                <div class="highlight-box">
+                    <p>The challenge: Given behavioral and contextual data (weather, time, passenger type, etc.), can we predict whether a user will accept a coupon?</p>
+                </div>
+            </section>
+
+            <!-- Solution Section -->
+            <section class="project-section">
+                <h2><i class="fas fa-lightbulb"></i> My Solution</h2>
+                <p>I built a full pipeline from data preprocessing to machine learning modeling and dashboard visualization. The solution included:</p>
+                <ul class="solution-list">
+                    <li><i class="fas fa-chart-line"></i> Exploratory Data Analysis (EDA) on categorical and numerical features</li>
+                    <li><i class="fas fa-robot"></i> Training and evaluation of multiple classification models</li>
+                    <li><i class="fas fa-sliders-h"></i> Hyperparameter tuning to optimize predictive performance</li>
+                    <li><i class="fas fa-chart-pie"></i> A public dashboard built with Tableau for business-friendly insights</li>
+                </ul>
+            </section>
+
+            <!-- Dashboard Screenshot -->
+            <section class="project-section">
+                <div class="dashboard-screenshot">
+                    <img src="../img/Coupon acceptance analysis.png" alt="Coupon Acceptance Dashboard Screenshot">
+                    <div class="screenshot-caption">Interactive Tableau dashboard showing coupon acceptance patterns and KPIs</div>
+                </div>
+            </section>
+
+            <!-- Insights Section -->
+            <section class="project-section">
+                <h2><i class="fas fa-chart-bar"></i> Key Insights from the Dashboard</h2>
+                <div class="insights-grid">
+                    <div class="insight-card">
+                        <div class="insight-icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <h3>Sunny Weather</h3>
+                        <p>Led to the highest acceptance rates compared to other weather conditions</p>
+                    </div>
+                    <div class="insight-card">
+                        <div class="insight-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Solo Travelers</h3>
+                        <p>Users traveling alone were more likely to accept coupons than groups</p>
+                    </div>
+                    <div class="insight-card">
+                        <div class="insight-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Timing Matters</h3>
+                        <p>Morning and late evening hours showed stronger acceptance behavior</p>
+                    </div>
+                    <div class="insight-card">
+                        <div class="insight-icon">
+                            <i class="fas fa-user-clock"></i>
+                        </div>
+                        <h3>Age Factor</h3>
+                        <p>Older users (50+) had slightly lower engagement with coupons</p>
+                    </div>
+                </div>
+                <div class="insights-summary">
+                    <p>The dashboard includes dynamic filters and KPIs such as global acceptance rate, top performing time slots, and segment-wise insights to support marketing strategy.</p>
+                </div>
+            </section>
+
+            <!-- ML Results Section -->
+            <section class="project-section">
+                <h2><i class="fas fa-robot"></i> Machine Learning Results</h2>
+                <div class="ml-results">
+                    <div class="result-card">
+                        <h3><i class="fas fa-tree"></i> Best Model</h3>
+                        <p>Random Forest (after tuning)</p>
+                    </div>
+                    <div class="result-card">
+                        <h3><i class="fas fa-bullseye"></i> Accuracy</h3>
+                        <p>73.75%</p>
+                    </div>
+                    <div class="result-card">
+                        <h3><i class="fas fa-ruler"></i> Precision</h3>
+                        <p>74.01%</p>
+                    </div>
+                    <div class="result-card">
+                        <h3><i class="fas fa-undo"></i> Recall</h3>
+                        <p>82.94%</p>
+                    </div>
+                    <div class="result-card">
+                        <h3><i class="fas fa-percentage"></i> F1 Score</h3>
+                        <p>78.22%</p>
+                    </div>
+                </div>
+                <p class="results-note">These results were achieved after testing Logistic Regression and Decision Trees, followed by GridSearchCV optimization.</p>
+            </section>
+
+            <!-- Technical Details -->
+            <section class="project-section">
+                <h2><i class="fas fa-code"></i> What I Did</h2>
+                <div class="tech-details">
+                    <div class="tech-item">
+                        <h3><i class="fas fa-broom"></i> Data Preparation</h3>
+                        <ul>
+                            <li>Cleaned and engineered features from raw categorical data</li>
+                        </ul>
+                    </div>
+                    <div class="tech-item">
+                        <h3><i class="fas fa-brain"></i> Model Development</h3>
+                        <ul>
+                            <li>Trained and compared classification models in scikit-learn</li>
+                            <li>Tuned hyperparameters with GridSearchCV</li>
+                        </ul>
+                    </div>
+                    <div class="tech-item">
+                        <h3><i class="fas fa-chart-bar"></i> Visualization</h3>
+                        <ul>
+                            <li>Designed business KPIs and visualizations in Tableau</li>
+                            <li>Communicated insights in both technical and business-friendly terms</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Project Footer -->
+        <footer class="project-footer">
+            <a href="../portfolio.html" class="btn btn-outline">
+                <i class="fas fa-arrow-left"></i> Back to Portfolio
+            </a>
+        </footer>
+    </div>
+</body>
+</html>
